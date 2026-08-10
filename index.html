@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soft Focus Saga</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background: #fff8fb;
+            color: #5c4650;
+        }
+
+        /* NAVIGATION */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #fff;
+            border-bottom: 1px solid #f1dce5;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #9b6479;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #765564;
+            margin-left: 25px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #b97892;
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #fff5f8, #f9e8ef);
+        }
+
+        .hero h1 {
+            font-size: 58px;
+            color: #9b6479;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 13px 28px;
+            background: #b97892;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+        }
+
+        .button:hover {
+            background: #965d75;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 70px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            color: #9b6479;
+            margin-bottom: 12px;
+        }
+
+        section > p {
+            margin-bottom: 35px;
+        }
+
+        /* PRODUCTS */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .product {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 20px;
+            border: 1px solid #f0dce4;
+            box-shadow: 0 5px 20px rgba(120, 80, 100, 0.08);
+        }
+
+        .product-icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .product h3 {
+            color: #82576a;
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* ABOUT */
+        .about {
+            background: #fff;
+        }
+
+        .about-text {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 35px;
+            background: #f8e7ee;
+            color: #765564;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">Soft Focus Saga ♡</div>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <h1>Soft Focus Saga</h1>
+
+        <p>
+            A little corner for beautiful digital creations,
+            thoughtful Islamic reflections, journals, planners,
+            calendars and coloring pages.
+        </p>
+
+        <a href="#shop" class="button">Explore the Collection ✧</a>
+    </section>
+
+
+    <!-- SHOP -->
+    <section id="shop">
+
+        <h2>♡ The Collection ♡</h2>
+
+        <p>Digital creations made for your softest moments.</p>
+
+        <div class="products">
+
+            <div class="product">
+                <div class="product-icon">🕌</div>
+                <h3>Quran Reflection Journal</h3>
+                <p>
+                    A beautiful space to reflect on Quran verses,
+                    lessons, duas and your journey with Allah.
+                </p>
+                 <a href="quran-journal.html" class="button">View Product</a>           </div>
+
+
+            <div class="product">
+                <div class="product-icon">📖</div>
+                <h3>Islamic Reflection Journal</h3>
+                <p>
+                    Thoughtful prompts to help you slow down,
+                    reflect and strengthen your connection with Allah.
+                </p>
+                <a href="#" class="button">View Product</a>
+            </div>
+
+
+            <div class="product">
+                <div class="product-icon">🗓️</div>
+                <h3>Islamic Calendar</h3>
+                <p>
+                    A pretty digital calendar to organize your days
+                    while keeping your faith at the center.
+                </p>
+                <a href="#" class="button">View Product</a>
+            </div>
+
+
+            <div class="product">
+                <div class="product-icon">🎀</div>
+                <h3>Digital Agenda</h3>
+                <p>
+                    Plan your school, work, goals and everyday life
+                    with a soft and organized digital agenda.
+                </p>
+                <a href="#" class="button">View Product</a>
+            </div>
+
+
+            <div class="product">
+                <div class="product-icon">🎨</div>
+                <h3>Cute Coloring Pages</h3>
+                <p>
+                    Relaxing and adorable coloring pages designed
+                    for peaceful creative moments.
+                </p>
+                <a href="#" class="button">View Product</a>
+            </div>
+
+
+            <div class="product">
+                <div class="product-icon">🌙</div>
+                <h3>Ramadan Journal</h3>
+                <p>
+                    Track your Quran reading, duas, goals,
+                    gratitude and spiritual growth throughout Ramadan.
+                </p>
+                <a href="#" class="button">View Product</a>
+            </div>
+
+
+            <div class="product">
+                <div class="product-icon">🤍</div>
+                <h3>Daily Gratitude Journal</h3>
+                <p>
+                    A gentle place to record the blessings,
+                    thoughts and moments you're grateful for.
+                </p>
+                <a href="#" class="button">View Product</a>
+            </div>
+
+
+            <div class="product">
+                <div class="product-icon">✨</div>
+                <h3>Goal & Dream Planner</h3>
+                <p>
+                    Turn your dreams into little steps with
+                    goals, habits and monthly planning pages.
+                </p>
+                <a href="#" class="button">View Product</a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <h2>♡ About Soft Focus Saga ♡</h2>
+
+        <p class="about-text">
+            Soft Focus Saga is a little collection of digital creations
+            designed to make everyday life feel more intentional,
+            creative and beautiful.
+
+            From Islamic reflection journals to cute coloring pages
+            and planners, every creation is made with love and
+            thoughtful details.
+        </p>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact">
+
+        <h2>♡ Let's Connect ♡</h2>
+
+        <p>
+            Have a question or want to say hello?
+        </p>
+
+        <a href="mailto:youremail@example.com" class="button">
+            Email Me
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Soft Focus Saga ♡ Made with love</p>
+    </footer>
+
+</body>
+</html>
+💾 Now do this
